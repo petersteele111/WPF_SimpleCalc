@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WPF_SimpleCalc"
         mc:Ignorable="d"
         Title="Calculator Window" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
 
     
     <!-- Start of Main Parent Grid 1x1-->
