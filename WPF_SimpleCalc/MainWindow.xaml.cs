@@ -73,20 +73,38 @@ namespace WPF_SimpleCalc
             double.TryParse(Height.Text, out double height);
             double result = height * 2.54;
             Height.Text = Convert.ToString(result);
+            HeightLabelUnits.Content = "(Cm)";
         }
 
         private void RadioInch_Checked(object sender, RoutedEventArgs e)
         {
-            double.TryParse(Height.Text, out double height);
-            double result = height / 2.54;
-            Height.Text = Convert.ToString(result);
+            if (Height.Text == "")
+            {
+                
+            }
+            else
+            {
+                double.TryParse(Height.Text, out double height);
+                double result = height / 2.54;
+                Height.Text = Convert.ToString(result);
+                HeightLabelUnits.Content = "(Inches)";
+            }
+
         }
 
         private void RadioLbs_Checked(object sender, RoutedEventArgs e)
         {
-            double.TryParse(Weight.Text, out double weight);
-            double result = weight * 2.205;
-            Weight.Text = Convert.ToString(result);
+            if (Weight.Text == "") 
+            {
+                
+            }
+            else
+            {
+                double.TryParse(Weight.Text, out double weight);
+                double result = weight * 2.205;
+                Weight.Text = Convert.ToString(result);
+                WeightLabelUnits.Content = "(lbs)";
+            }
         }
 
         private void RadioKg_Checked(object sender, RoutedEventArgs e)
@@ -94,6 +112,7 @@ namespace WPF_SimpleCalc
             double.TryParse(Weight.Text, out double weight);
             double result = weight / 2.205;
             Weight.Text = Convert.ToString(result);
+            WeightLabelUnits.Content = "(Kg)";
         }
 
         private void Button_Click_Clear(object sender, RoutedEventArgs e)

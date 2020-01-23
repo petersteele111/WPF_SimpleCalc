@@ -114,20 +114,27 @@
                 </Grid.RowDefinitions>
 
                 <!-- Start Main Body Grid Content -->
-                <Label 
-                    Grid.Column="0"
-                    Grid.Row="0"
-                    Content="Height"
-                    FontSize="36"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Right"
-                    Padding="0 0 15 0"/>
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0">
+                    <Label 
+                        Content="Height"
+                        FontSize="36"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
+                        Padding="0 0 15 0"/>
 
+                    <Label 
+                        Name="HeightLabelUnits"
+                        Content="(Inches)"
+                        FontSize="28"
+                        VerticalAlignment="Center"/>
+
+                </StackPanel>
+                
                 <TextBox 
                     Grid.Column="1"
                     Grid.Row="0"
                     FontSize="36"
-                    VerticalAlignment="Center" 
+                    VerticalAlignment="Center"
                     TextChanged="TextBox_TextChanged_Height"
                     Name="Height"/>
 
@@ -142,7 +149,9 @@
                     <RadioButton 
                         GroupName="height" 
                         Content="inch"
-                        Name="RadioInch" Checked="RadioInch_Checked"/>
+                        Name="RadioInch"
+                        IsChecked="True"
+                        Checked="RadioInch_Checked"/>
                 </Viewbox>
 
                 <Viewbox 
@@ -156,7 +165,8 @@
                     <RadioButton 
                         GroupName="height"
                         Content="cm"
-                        Name="RadioCm" Checked="RadioCm_Checked"/>
+                        Name="RadioCm" 
+                        Checked="RadioCm_Checked"/>
                 </Viewbox>
 
                 <TextBlock
@@ -170,15 +180,26 @@
                     FontWeight="Bold">
                 </TextBlock>
 
-
-                <Label 
+                <StackPanel 
+                    Orientation="Horizontal"
                     Grid.Column="0"
-                    Grid.Row="2"
-                    Content="Weight"
-                    FontSize="36"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Right"
-                    Padding="0 0 15 0"/>
+                    Grid.Row="2">
+                    
+                    <Label 
+                        Content="Weight"
+                        FontSize="36"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Padding="0 0 15 0"/>
+
+                    <Label
+                        Name="WeightLabelUnits"
+                        Content="(lbs)"
+                        FontSize="28"
+                        VerticalAlignment="Center"/>
+
+                </StackPanel>
+                
                 
                 <TextBox 
                     Grid.Column="1"
@@ -199,7 +220,9 @@
                     <RadioButton
                         GroupName="weight"
                         Content="lbs"
-                        Name="RadioLbs" Checked="RadioLbs_Checked"/>
+                        Name="RadioLbs"
+                        IsChecked="True"
+                        Checked="RadioLbs_Checked"/>
 
                 </Viewbox>
 
