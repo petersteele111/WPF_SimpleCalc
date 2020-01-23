@@ -16,7 +16,7 @@
 
         <!-- Start of Main Grid 1x3 -->
         <Grid 
-            Background="Teal">
+            Background="AliceBlue">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition
@@ -40,7 +40,7 @@
                 FontSize="50"
                 Grid.Column="0"
                 Grid.Row="0"
-                Foreground="White">
+                Foreground="Black">
                 Help
             </TextBlock>
 
@@ -53,7 +53,7 @@
                 <TextBlock 
                     FontSize="18"
                     FontWeight="Bold"
-                    Foreground="White">
+                    Foreground="Black">
                     This is the help section for the Height/Weight Application. See instructions below.
                 </TextBlock>
                
@@ -63,7 +63,7 @@
                         <Ellipse
                             Height="10"
                             Width="10"
-                            Fill="White"
+                            Fill="Black"
                             Margin="20 50 0 0">
                         </Ellipse>
 
@@ -73,7 +73,7 @@
                         FontSize="18"
                         Margin="30 50 0 0"
                         FontStyle="Italic"
-                        Foreground="White">
+                        Foreground="Black">
                         Input the Height or Weight into the provided fields
                     </TextBlock>
 
@@ -85,7 +85,7 @@
                         <Ellipse
                             Height="10"
                             Width="10"
-                            Fill="White"
+                            Fill="Black"
                             Margin="20 10 0 0">
                         </Ellipse>
 
@@ -95,7 +95,7 @@
                         FontSize="18"
                         Margin="30 10 0 0"
                         FontStyle="Italic"
-                        Foreground="White">
+                        Foreground="Black">
                         Select the appropriate radio button to convert the Height or Weight automatically
                     </TextBlock>
 
@@ -107,7 +107,7 @@
                         <Ellipse
                             Height="10"
                             Width="10"
-                            Fill="White"
+                            Fill="Black"
                             Margin="20 10 0 0">
                         </Ellipse>
 
@@ -117,7 +117,7 @@
                         FontSize="18"
                         Margin="30 10 0 0"
                         FontStyle="Italic"
-                        Foreground="White">
+                        Foreground="Black">
                         To exit the application, simply click on the exit button
                     </TextBlock>
 
@@ -126,7 +126,7 @@
                 <TextBlock
                     FontSize="16"
                     Margin="10 50"
-                    Foreground="White">
+                    Foreground="Red">
                     If you have any further questions or concerns, please contact the developer at info@pbsteele.com
                 </TextBlock>
 
@@ -141,6 +141,8 @@
                 Height="60"
                 HorizontalAlignment="Right"
                 Margin="0 0 15 0"
+                Background="Crimson"
+                Foreground="White"
                 Click="Button_Click_Help_Close">
             </Button>
 
