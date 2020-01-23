@@ -24,6 +24,11 @@ namespace WPF_SimpleCalc
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Sets behavior for Return Button when clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click_Help_Close(object sender, RoutedEventArgs e)
         {
             this.Close();

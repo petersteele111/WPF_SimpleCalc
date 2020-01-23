@@ -153,6 +153,7 @@
                         Name="RadioInch"
                         IsChecked="True"
                         Checked="RadioInch_Checked"/>
+
                 </Viewbox>
 
                 <Viewbox 
@@ -168,6 +169,7 @@
                         Content="cm"
                         Name="RadioCm" 
                         Checked="RadioCm_Checked"/>
+
                 </Viewbox>
 
                 <TextBlock
@@ -285,7 +287,6 @@
                         Click="Button_Click_Exit"/>
 
                 </StackPanel>
-               
 
 
             </Grid> <!-- End Main Body Grid -->
