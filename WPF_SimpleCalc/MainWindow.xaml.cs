@@ -119,10 +119,12 @@ namespace WPF_SimpleCalc
         {
             Height.Text = "";
             Weight.Text = "";
-            RadioInch.IsChecked = false;
+            RadioInch.IsChecked = true;
             RadioCm.IsChecked = false;
-            RadioLbs.IsChecked = false;
+            RadioLbs.IsChecked = true;
             RadioKg.IsChecked = false;
+            HeightLabelUnits.Content = "(Inches)";
+            WeightLabelUnits.Content = "(lbs)";
         }
     }
 }
